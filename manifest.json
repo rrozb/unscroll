@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "unscroll",
+  "version": "1.0.0",
+  "description": "Block distracting sites. No timers, no accounts — just a wall and an escape hatch.",
+  "permissions": ["storage", "declarativeNetRequest", "alarms", "tabs"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "unscroll" },
+  "web_accessible_resources": [
+    { "resources": ["blocked.html"], "matches": ["<all_urls>"] }
+  ],
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  }
+}
