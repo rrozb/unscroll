@@ -13,6 +13,14 @@ A tiny Chrome extension that blocks distracting sites completely. It has no time
 2. Click **Load unpacked** and select this folder.
 3. Pin the extension and click it to add or remove sites.
 
+## Build
+
+```bash
+./scripts/build.sh
+```
+
+This creates `dist/unscroll/`, a clean folder for **Load unpacked**, and `dist/unscroll-<version>.zip` for uploading to the Chrome Web Store.
+
 ## Files
 
 | file | what |
